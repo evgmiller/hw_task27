@@ -3,20 +3,16 @@
 //82 -> 10
 //9012 -> 12
 
-Console.Write ("Введите число: ");
+Console.Write("Введите число: ");
 int x = int.Parse(Console.ReadLine()!);
-// int N= X%10;
-// Console.WriteLine(N);
-
-int SumNum (int x)
+int SumNum(int x)
 {
-    int sum=0;
-    while (x>1)
+    int sum = 0;
+    while (x > 1)
     {
-        sum=sum+x%10;
-        x=x/10;
+        sum = sum + x % 10;
+        x = x / 10;
     }
     return sum;
 }
-
-Console.WriteLine($"Суммачисел в числе: {SumNum (x)}");
+Console.WriteLine($"Суммачисел в числе: {SumNum(x)}");
